@@ -160,10 +160,10 @@ function App() {
 
           {/* ADMIN ROUTES */}
           {!supreme?
-            <Route path="/admin5148486465" element={<AdminLogin/>}/>
+            <Route path={process.env.REACT_APP_ADMIN_PANEL_ROUTE} element={<AdminLogin/>}/>
             :
             <>
-            <Route path="/admin5148486465" element={<AdminHome/>}/>
+            <Route path={process.env.REACT_APP_ADMIN_PANEL_ROUTE} element={<AdminHome/>}/>
           </>
           }
 
