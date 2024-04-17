@@ -1,0 +1,12 @@
+.home_main_div{
+    position:relative;
+    /* border: 0.2mm solid red; */
+   
+    width: 100%;
+    height: fit-content;
+ 
+    /* overflow-y:auto; */
+}
+
+
+  

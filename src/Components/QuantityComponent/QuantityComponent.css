@@ -1,0 +1,97 @@
+:root{
+    --border-radius:0.15cm;
+}
+
+.product-quantity-div{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0.3cm 0.1cm;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 0.6cm;
+    width: 99%;
+    /* border: 0.2mm solid red; */
+}
+
+.product-quantity-div button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 0.2mm solid rgb(151, 151, 151);
+    font-size: 0.85cm;
+    color: rgb(0, 0, 0);
+    min-width:1.3cm;
+    max-height: 1.2cm;
+    /* background-color: rgb(167, 167, 167); */
+    background-color: rgb(172, 172, 172); 
+}
+
+.product-quantity-div button:hover{
+    background-color: rgb(162, 162, 162); 
+}
+
+.product-quantity-div text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width:1.3cm;
+    max-height: 1.2cm;
+    min-height: 1.19cm;
+    border: 0.2mm solid rgb(151, 151, 151);
+    border-left: 0mm;
+    border-right: 0mm;
+    background-color: rgb(223, 223, 223);
+}
+
+.quantity-left-btn{
+    border-top-left-radius:var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+}
+
+.quantity-right-btn{
+    border-top-right-radius:var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+
+.product-quantity-div-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.product-quantity-div-title{
+    width:fit-content;
+    margin-right:0.2cm;
+    font-size:0.45cm;
+}
+
+
+@media only screen and (max-device-width:1050px) {
+    .product-quantity-div button{
+        font-size: 0.5cm;
+        min-width:1cm;
+        max-height: 1cm;
+    }
+
+    .product-quantity-div text{
+        max-height: 1cm;
+        min-height: 1cm;
+        min-width:1.15cm;
+    }
+    .product-quantity-div{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        /* border: 0.2mm solid red; */
+    }
+
+    .product-quantity-div-title{
+        width:97%;
+        margin-right:0.2cm;
+        font-size:0.45cm;
+    }
+}

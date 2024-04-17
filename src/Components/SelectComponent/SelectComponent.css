@@ -1,0 +1,18 @@
+.select-tag-class-client{
+    width: 98%;
+    border: 0.2mm solid black;
+    padding: 0.1cm;
+    font-size: 0.5cm;
+    border-radius: 0.1cm;
+   
+}
+
+.select-tag-class-client-main{
+    margin-bottom: 0.3cm;
+}
+
+@media only screen and (max-device-width:680px) {
+    .select-tag-class-client{
+        width: 97%;
+    }
+}

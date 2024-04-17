@@ -1,0 +1,184 @@
+:root{
+    --text-color:whitesmoke;
+}
+
+.cross-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border: 0.2mm solid rgb(245, 245, 245);
+    background-color: tomato;
+    color: whitesmoke;
+    right: -0.2cm;
+    top: -0.2cm;
+    width: 1cm;
+    height: 1cm;
+    border-radius: 0.5cm;
+    font-size: 0.85cm;
+}
+.cross-btn:hover{
+    background-color: rgb(171, 67, 48);
+}
+
+.edit-product-card{ 
+    width: 25.7cm;
+    border: 0.4mm solid rgb(0, 0, 0);
+    border-radius: 0.3cm;
+    padding: 0.1cm;
+    height: fit-content;
+    background-color: rgb(195, 195, 195);
+    /* background-color: rgb(64, 66, 69); */
+    margin-top: 0.4cm;
+    z-index: 1;
+    
+}
+
+.edit-product-heading{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+    padding: 0.2cm;
+    background-color: black;
+    font-size:0.55cm ;
+    border-top-right-radius: 0.3cm;
+    border-top-left-radius:0.3cm ;
+}
+
+.edit-product-image{
+    height: 4cm;
+    width: 4cm;
+    /* border-radius: 0.2cm; */
+    border: 0.2mm solid rgb(0, 0, 0);
+    overflow: hidden;
+ 
+}
+
+.edit-product-image-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 0.2mm solid black; */
+    padding: 0.2cm 0.2cm;
+    background-color: rgb(92, 108, 125);
+}
+
+.edit-product-image-div label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.4cm;
+    padding: 0.1cm 0.4cm;
+    border: 0.2mm solid black;
+    border-radius: 0.1cm;
+    color: var(--text-color);
+    background-color: black;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.edit-product-image-div label:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+
+.edit-product-credentials{
+    padding: 0.3cm 0.4cm;
+    background-color: rgb(66, 81, 98);
+    border-bottom-left-radius: 0.3cm;
+    border-bottom-right-radius: 0cm;
+}
+
+.edit-product-button{
+    margin-top: 0.5cm;
+    background-color: rgb(128, 168, 48);
+    border-radius: 0.1cm;
+    color: var(--text-color);
+    padding: 0.1cm 0cm;
+    font-size: 0.5cm;
+    width: 100%;
+    border: 0.2mm solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.edit-product-button:hover{
+    /* background-color: rgb(151, 198, 57); */
+    background-color: rgb(112, 150, 36);
+}
+
+.edit-product-column-parent{
+    display: flex;
+    flex-direction: row;
+}
+
+.edit-product-column-1{
+    width: 40%;
+}
+
+.edit-product-column-2{
+    display: flex;
+
+    justify-content: center;
+    width: 60%;
+    border-bottom-right-radius: 0.2cm;
+    overflow: hidden;
+    
+}
+
+.edit-product-column-inner{
+    display: flex;
+    flex-direction: column;
+
+    /* border: 0.2mm solid red; */
+    background-color: rgb(72, 90, 111);
+    width: 100%;
+    padding: 0cm 0.3cm;
+}
+
+/* .size-options-div{
+
+} */
+
+
+@media screen and (max-device-width:600px) {
+    .edit-product-card{ 
+        
+        margin-top: 0cm;
+        padding: 0cm 0cm;
+        width: 100%;
+        height: 100%;
+        border-radius: 0cm;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    
+    
+    .edit-product-credentials{
+        border-radius: 0cm;
+ 
+    }
+    
+
+    .edit-product-column-parent{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    
+    .edit-product-column-1{
+        width: 100%;
+    }
+    .edit-product-column-2{
+        width: 100%;
+        height: 100%;
+    }
+
+    .edit-product-column-inner{
+        position: relative;
+        height: 100%;
+        padding: 0.2cm 0.3cm;
+    }
+}

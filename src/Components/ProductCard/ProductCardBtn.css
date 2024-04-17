@@ -1,0 +1,56 @@
+ /* BUTTONS HEART AND CART */
+.product-btns{
+    display: flex;
+    align-items: center;
+    /* border: 0.2mm solid red; */
+    margin-top: 0.1cm;
+}
+.heart_btn{
+
+    color: whitesmoke;
+    border: 0.2mm solid whitesmoke;
+    font-size: 0.65cm;
+    background-color: rgb(52, 52, 52);
+    border-radius: 0.1cm;
+    transition: 0.15s;
+    width: 1.2cm;
+    height: 1.2cm;
+    /* margin-left: 0.75cm; */
+
+}
+
+.heart_btn_selected{
+    color: rgb(255, 0, 0);
+}
+
+.cart_btn{
+    color: whitesmoke;
+    border: 0.2mm solid rgb(72, 112, 215);
+    font-size: 0.6cm;
+    background-color: rgb(72, 112, 215);
+    border-radius: 0.1cm;
+    transition: 0.5s;
+    width: 1.2cm;
+    height: 1.2cm;
+    margin-left: 0.1cm;
+}
+
+
+.cart_btn:hover{
+    background-color: rgb(59, 93, 181);
+}
+
+
+
+.rating{
+    display: flex;
+    align-items: center;
+    color: gold;
+    font-size: 0.65cm;
+}
+
+.rating b{
+    color: black;
+    font-size: 0.45cm;
+}
+

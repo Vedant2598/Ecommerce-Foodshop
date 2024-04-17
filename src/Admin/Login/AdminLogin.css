@@ -1,0 +1,22 @@
+.admin-login-parent{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(182, 182, 182);
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.admin-login-main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2cm;
+    /* border: 0.2mm solid rgb(0, 0, 0); */
+    background-color: rgb(82, 90, 100);
+    width: 9cm;
+    height: fit-content;
+    padding: 0.5cm 0.5cm;
+}

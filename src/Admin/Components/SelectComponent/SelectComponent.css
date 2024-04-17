@@ -1,0 +1,12 @@
+.select-tag-class{
+    width: 98%;
+    border: 0.2mm solid black;
+    padding: 0.1cm;
+    font-size: 0.5cm;
+    border-radius: 0.1cm;
+   
+}
+
+.select-tag-class-main{
+    margin-bottom: 0.3cm;
+}

@@ -1,0 +1,222 @@
+.accounts_main_div{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    height: 100%;
+
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(224, 224, 224);
+    /* background-color: #404041; */
+    z-index: 6;
+    overflow: hidden;
+
+   
+}
+
+/* ACCOUNT NAVBAR */
+.account-navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* background-color: rgb(47, 48, 52); */
+    background-color: rgb(208, 208, 208);
+    box-shadow: 0px 3px 8px rgb(0, 0, 0,0.25);
+    padding: 0.15cm 0.5cm;
+}
+.account-navbar text{
+    color: rgb(0, 0, 0);
+    font-size: 0.6cm;
+}
+
+
+/* NAVIGATION FOR MOBILE */
+.navigation-for-mobile{
+    display: none;
+    align-items: center;
+    position: absolute;
+    right: 0.25cm;
+
+}
+
+.navigation-for-mobile span{
+    display: flex;
+    align-items: center;
+    font-size: 0.55cm;
+    /* border: 0.5mm solid rgb(65, 73, 82); */
+    color: rgb(55, 59, 62);
+    padding: 0.2cm;
+    border-radius: 0.1cm;
+}
+
+.navigation-for-mobile-options{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 1.2cm;
+    right: 0;
+
+    border: 0.2mm solid rgb(155, 155, 155);
+}
+
+.navigation-for-mobile-options div{
+    background-color: whitesmoke;
+    padding: 0.1cm 0.2cm;
+    border-bottom: 0.2mm solid rgb(195, 195, 195);
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.navigation-for-mobile-options div:hover{
+    background-color: rgb(205, 205, 205);
+}
+
+.navigation-for-mobile-options text{
+    font-size: 0.55cm;
+}
+
+
+/* navigation-for-pc */
+
+.navigation-for-pc{
+    display: flex;
+    flex-direction: column;
+    /* border: 0.2mm solid blue; */
+    width: 25%;
+    height: 100%;
+    margin-right: 0.2cm;
+    padding: 0.25cm 0cm;
+    /* background-color: rgb(209, 209, 209); */
+}
+
+.navigation-for-pc div{
+    display: flex;
+    font-size: 0.55cm;
+    font-weight: 400;
+    padding: 0.2cm;
+    cursor: pointer;
+    /* border-radius: 0.1cm; */
+}
+
+.navigation-for-pc text{
+    display: flex;
+    align-items: center;
+}
+
+.navigation-for-pc span{
+    display: flex;
+    align-items: center;
+    margin-right: 0.2cm;
+}
+
+.navigation-for-pc div:hover{
+    font-size: 0.55cm;
+    color: whitesmoke;
+    background-color: rgb(73, 141, 205);
+    padding: 0.2cm;
+    z-index: 1;
+
+}
+
+.navigation-for-pc-active{
+    background-color: rgb(67, 69, 73);
+    color: whitesmoke;
+    z-index: 4;
+}
+.navigation-for-pc-active:hover{
+    background-color: rgb(67, 69, 73);
+}
+
+
+/* ACCOUNT CARD PARENT */
+
+.account-card-parent{
+    display: flex;
+    /* justify-content: center; */
+    /* border: 0.2mm solid red; */
+    padding: 0.2cm;
+    width: 100%;
+    height: 100%;
+}
+
+.account-card{
+    display: flex;
+    justify-content: center;
+    border: 0.2mm solid rgb(167, 167, 167);
+    box-shadow: 0px 2px 10px rgb(0, 0, 0,0.1);
+    background-color: rgb(224, 224, 224);
+    width: 75%;
+    height: 100%;
+    /* height: fit-content; */
+    /* border-radius: 0.1cm; */
+    padding: 0.3cm 0cm;
+    border-radius: 0.05cm;
+}
+
+
+
+@media screen and (max-device-width:1050px) {
+
+    .navigation-for-mobile{
+        display: flex;
+    }
+
+    .navigation-for-mobile-options{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navigation-for-pc{
+        display: none;
+    }
+
+    .account-card-parent{
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .accounts_main_div{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .account-card-parent{
+       width: 100%;
+    }
+    .account-card{
+
+        width: 70%;
+    }
+}
+
+@media screen and (max-device-width:840px) {
+    .navigation-for-mobile{
+        display: flex;
+    }
+    .navigation-for-mobile-options{
+        display: flex;
+        flex-direction: column;
+    }
+    .navigation-for-pc{
+        display: none;
+    }
+    .accounts_main_div{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .account-card-parent{
+        padding: 0cm;
+       width: 100%;
+    }
+    .account-card{
+
+        width: 100%;
+    }
+}

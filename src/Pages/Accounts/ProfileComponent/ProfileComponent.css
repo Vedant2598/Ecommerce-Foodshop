@@ -1,0 +1,129 @@
+.edit-profile-parent{
+    padding: 0.2cm 0.3cm;
+    width: 100%;
+    height: 100%;
+    color: rgb(39, 40, 43);
+    overflow-y: auto;
+}
+
+.edit-profile-parent h2{
+    padding: 0.2cm;
+    border-radius: 0.2cm;
+}
+
+.edit-profile-section-header{
+    display: flex;
+    flex-direction: column;
+    padding: 0.2cm;
+    /* border-bottom: 0.4mm solid rgb(183, 183, 183); */
+}
+
+.edit-profile-section-header h5{
+    display: flex;
+    align-items: center; 
+}
+.edit-profile-section-header text{
+    display: flex;
+    align-items: center; 
+}
+
+
+
+.edit-profile-section-header span{
+    border-bottom: 0.6mm solid rgb(183, 183, 183);
+    width: 100%;
+}
+
+
+/* PROFILE COLUMNS */
+.edit-profile-credentials{
+    display: flex;
+    width: 100%;
+    padding-bottom: 0.7cm;
+}
+.edit-profile-credentials-left{
+    padding: 0.2cm;
+    width: 40%;
+    /* border: 0.1mm solid red; */
+}
+.edit-profile-credentials-right{
+    width: 60%;
+    padding: 0.4cm 0.6cm;
+}
+
+.edit-profile-credentials-left p{
+    margin-top: 0.5cm;
+    font-size: 0.35cm;
+}
+
+.save-btn{
+    background-color: rgb(50, 130, 205);
+    border: 0.2mm solid black;
+    width: fit-content;
+    border-radius: 0.1cm;
+    color: whitesmoke;
+    margin-top: 0.2cm;
+    font-size: 0.55cm;
+    padding: 0.05cm 0.8cm;
+}
+.save-btn:hover{
+    background-color: rgb(43, 109, 171);
+}
+
+/* INPUT COMPONENTS */
+.edit-profile-input-div{
+    display: flex;
+    flex-direction: column;
+    padding: 0.2cm 0cm;
+    justify-content: center;
+    margin-right: 0.2cm;
+    /* border: 0.2mm solid red; */
+}
+.edit-profile-input-div input{
+    border: 0.2mm solid rgb(101, 101, 101);
+    background-color: rgb(205, 205, 205);
+    border-radius: 0.1cm;
+    width: 80%;
+    min-width: 7cm;
+    padding: 0.2cm 0.5cm;
+}
+
+.edit-profile-input-div label{
+    font-weight: 600;
+    font-size: 0.5cm;
+    margin-bottom: -0.05cm;
+}
+
+@media only screen and (max-device-width:680px) {
+    .edit-profile-parent{
+        padding: 0.2cm 0.3cm;
+        
+    }
+
+    .edit-profile-credentials{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .edit-profile-credentials-left{
+        padding: 0.2cm;
+        width: 100%;
+        /* border: 0.1mm solid red; */
+    }
+    .edit-profile-credentials-right{
+        width: 100%;
+        padding: 0.4cm 0.3cm;
+        /* border: 0.1mm solid red; */
+    }
+
+    
+    .edit-profile-credentials-left p{
+        margin-top: 0cm;
+        font-size: 0.35cm;
+    }
+
+    .edit-profile-input-div input{
+        width: 100%;
+    }
+}

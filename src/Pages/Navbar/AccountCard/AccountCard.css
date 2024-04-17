@@ -1,0 +1,46 @@
+
+.account_card{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    /* border: 0.2mm solid rgb(0, 0, 0); */
+    border-radius: 0.1cm;
+    top: 1.2cm;
+    right: 0;
+    width: 5cm;
+    height: fit-content;
+    padding: 0.2cm 0.3cm;
+    overflow: hidden;
+    z-index: 5;
+    animation-name: slide_down;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+}
+
+.account_card a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+}
+
+.account_card text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    margin-left: 0.1cm;
+}
+
+.account_card span{
+    display: flex;
+    align-items: center;
+
+}
+
+@keyframes slide_down {
+    from{height: 0cm;}
+    to{height: 5cm;}
+}
+
+

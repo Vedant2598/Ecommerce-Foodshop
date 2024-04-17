@@ -1,0 +1,54 @@
+.input-div-client-parent{
+    margin-top: 0.2cm;
+    margin-bottom: 0.5cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.input-div-client-parent b{
+    font-size: 0.4cm;
+    user-select: none;
+    color: whitesmoke;
+    align-self:flex-start;
+}
+
+.input-div-client{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* border: 0.2mm solid red; */
+}
+
+.input-div-client span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 0.2mm solid black; */
+    border-top-left-radius: 0.1cm;
+    border-bottom-left-radius: 0.1cm;
+    color: black;
+    margin-top: 0.2cm;
+    padding: 0.15cm 0.2cm;
+    background-color: rgb(187, 187, 187);
+    /* background-color: gold; */
+    align-self: center;
+    font-size: 0.7cm;
+}
+
+.input-div-client input{
+    margin-top: 0.2cm;
+    border: 0mm solid rgb(170, 16, 16);
+    border-left:0mm;
+    font-size: 0.4cm;
+    width: 90%;
+    padding: 0.2cm 0.2cm;
+    border-bottom-right-radius: 0.1cm;
+    border-top-right-radius: 0.1cm;
+}
+
+.input-div-client-display-only{
+    background-color: whitesmoke;
+    color: rgb(95, 95, 95);
+}

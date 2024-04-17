@@ -1,0 +1,99 @@
+
+
+.alert-box{
+    margin-top: 0.1cm;
+    align-self: center;
+    position: absolute;
+    display: flex;
+    background-color: black;
+    color: whitesmoke;
+    /* border: 0.2mm solid red; */
+    padding: 0cm 1cm;
+    padding-right: 1.3cm;
+    border-radius: 0.1cm;
+    z-index: 10;
+    animation-name: alertboxAnimation;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+}
+
+.alert-box-close{
+    align-self: center;
+    position: absolute;
+    display: flex;
+    background-color: black;
+    color: whitesmoke;
+    /* border: 0.2mm solid red; */
+    padding: 0cm 1cm;
+    padding-right: 1.3cm;
+    border-radius: 0.1cm;
+    z-index: 10;
+    animation-name: alertboxAnimationExit;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+}
+
+.alert-box-cross-div{
+    display: flex;
+    align-items: center;
+    margin-right: 0.2cm;
+}
+
+.alert-box-cross-div span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6cm;
+    padding: 0.2cm;
+    border-radius: 1cm;
+    border: 0.2mm solid red;
+    background-color: red;
+}
+
+.alert-box-message-div{
+    position: relative;
+    /* border: 0.2mm solid red; */
+    height: 2cm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.alert-box-message-div b{
+    display: flex;
+    padding: 0cm 0.2cm;
+    font-size: 0.6cm;
+    align-items: center;
+}
+
+.alert-box-message-div label{
+    display: flex;
+    padding: 0cm 0.2cm;
+    align-items: center;
+}
+
+.alert-box-button-div{
+    position: absolute;
+    right: 0;
+    width: 0.8cm;
+    height: 0.8cm;
+    margin-bottom: 0.3cm;
+    border: 0mm solid rgb(0, 0, 0);
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.alert-box-button-div:hover{
+    color: rgb(170, 170, 170);
+}
+
+
+@keyframes alertboxAnimationExit {
+    from{transform: translateY(0cm);}
+    to{transform: translateY(-2cm);}
+}
+
+@keyframes alertboxAnimation {
+    from{transform: translateY(-1.25cm);}
+    to{transform: translateY(0cm);}
+}

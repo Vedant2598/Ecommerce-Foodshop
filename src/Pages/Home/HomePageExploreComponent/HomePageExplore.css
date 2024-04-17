@@ -1,0 +1,41 @@
+.home-message {
+    text-align: center;
+    padding: 50px;
+    /* background-color: #f8f8f8;  */
+    background-color: #333;
+    
+    /* Light background color */
+  }
+  
+  .home-message h1 {
+    font-size: 36px;
+    /* color: #333;  */
+    color: whitesmoke;
+    /* Dark text color */
+    margin-bottom: 20px;
+  }
+  
+  .home-message p {
+    font-size: 18px;
+    color: #6d6d6d; /* Slightly darker text color */
+    max-width: 600px;
+    margin: 0 auto 30px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff6347; /* Coral color for the button */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .cta-button:hover {
+    color: #fff;
+    background-color: #ed6939; /* Darker coral color on hover */
+    text-decoration: none;
+  }

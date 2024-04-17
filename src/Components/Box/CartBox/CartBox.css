@@ -1,0 +1,102 @@
+
+
+.cart-box{
+    align-self: center;
+    position: absolute;
+    display: flex;
+    background-color: rgb(27, 26, 26);
+    color: whitesmoke;
+    /* border: 0.2mm solid rgb(212, 212, 212); */
+    padding: 0cm 1cm;
+    padding-right: 1.3cm;
+    border-radius: 0.1cm;
+    margin-top: 0.2cm;
+    overflow: hidden;
+    z-index: 10;
+    animation-name: alertboxAnimation;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+}
+
+.cart-box-close{
+    align-self: center;
+    position: absolute;
+    display: flex;
+    background-color: black;
+    color: whitesmoke;
+    /* border: 0.2mm solid red; */
+    padding: 0cm 1cm;
+    padding-right: 1.3cm;
+    border-radius: 0.1cm;
+    z-index: 10;
+    animation-name: alertboxAnimationExit;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+}
+
+.cart-box-cross-div{
+    display: flex;
+    align-items: center;
+    margin-right: 0.2cm;
+}
+
+.cart-box-cross-div span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.65cm;
+    padding: 0.25cm;
+    border-radius: 1cm;
+    border: 0.2mm solid rgb(227, 227, 227);
+    background-color: rgb(223, 132, 29);
+    /* background-color: rgb(56, 153, 56); */
+}
+
+.cart-box-message-div{
+    position: relative;
+    /* border: 0.2mm solid red; */
+    height: 2cm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cart-box-message-div b{
+    display: flex;
+    padding: 0cm 0.2cm;
+    font-size: 0.5cm;
+    align-items: center;
+    text-align: center;
+}
+
+.cart-box-message-div label{
+    display: flex;
+    padding: 0cm 0.2cm;
+    align-items: center;
+}
+
+.cart-box-button-div{
+    position: absolute;
+    right: 0;
+    width: 0.8cm;
+    height: 0.8cm;
+    margin-bottom: 0.3cm;
+    border: 0mm solid rgb(0, 0, 0);
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.cart-box-button-div:hover{
+    color: rgb(170, 170, 170);
+}
+
+
+@keyframes alertboxAnimationExit {
+    from{transform: translateY(0cm);}
+    to{transform: translateY(-2cm);}
+}
+
+@keyframes alertboxAnimation {
+    from{transform: translateY(-1.25cm);}
+    to{transform: translateY(0cm);}
+}

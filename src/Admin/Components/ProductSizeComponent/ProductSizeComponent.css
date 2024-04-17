@@ -1,0 +1,32 @@
+.product-size-component{
+    display: flex;
+    align-items: center;
+    background-color: rgb(63, 77, 96);
+    padding: 0.2cm 0.2cm;
+    overflow: hidden;
+}
+
+.product-size-component b{
+    color: whitesmoke;
+    font-size: 0.5cm;
+    margin-right: 0.1cm;
+}
+
+.product-size-component div{
+    width: 4cm;
+    /* overflow: hidden; */
+
+    /* border: 0.2mm solid red; */
+}
+.product-size-component-input{
+    border: 0.2mm solid black;
+    border-radius: 0.1cm;
+    width: 3cm;
+}
+.product-size-component-check{
+    font-size: xx-large;
+    transform: scale(1.5);
+    width: 2cm;
+    border: 0.2mm solid red;
+    cursor: pointer;
+}

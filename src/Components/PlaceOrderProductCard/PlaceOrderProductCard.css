@@ -1,0 +1,80 @@
+.place-order-component-parent{
+    position: relative;
+    display: flex;
+    border: 0.2mm solid rgb(165, 165, 165);
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(225, 225, 225);
+    /* box-shadow: 0px 3px 8px rgb(0, 0, 0,0.2); */
+    border-radius: 0.1cm;
+    overflow: hidden;
+    margin-bottom: 0.1cm;
+}   
+
+.place-order-component-image{
+    width: 3.5cm;
+    height: 3.5cm;
+}
+
+.place-order-component-info{
+    display: flex;
+    padding: 0.2cm;
+    font-size: 0.5cm;
+    flex-direction: column;
+}
+.place-order-component-info label{
+    margin-bottom: -0.025cm;
+}
+.place-order-component-title{
+    font-size: 0.6cm;
+}
+
+.place-order-quantity{
+    font-size: 0.43cm;
+    padding: 0.1cm 0cm;
+    padding-left: 0.1cm;
+    padding-right: 0.2cm;
+    border-radius: 0.1cm;
+    text-align: left;
+    width: fit-content;
+    background-color: rgb(187, 187, 187);
+}
+
+.place-order-price{
+    padding: 0.1cm;
+    color: green;
+}
+
+.place-order-component-size{
+    font-size: 0.45cm;
+}
+
+@media only screen and (max-device-width:680px) {
+    .place-order-component-image{
+        display: flex;
+        align-items: center;
+        width: 3.5cm;
+        height:3.5cm;
+    }
+    .place-order-component-parent{
+        /* height: 3cm; */
+        height: fit-content;
+    }   
+    .place-order-component-info{
+        font-size: 0.45cm;
+   
+    }
+    .place-order-component-title{
+        font-size: 0.5cm;
+    }
+    
+    .place-order-component-size{
+        font-size: 0.5cm;
+    }
+
+    .place-order-price{
+        padding: 0.1cm;
+        font-size: 0.47cm;
+    }
+   
+}

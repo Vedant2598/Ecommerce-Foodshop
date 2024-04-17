@@ -1,0 +1,169 @@
+.navbars{
+
+    display: flex;
+    flex-direction: row;
+    padding: 0.15cm 0cm;
+   
+}
+.navbars_brand{
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    text-decoration: none;
+    /* border: 0.2mm solid red; */
+    font-size: 0.65cm;
+    padding: 0cm 0.3cm;
+    z-index: 0;
+}
+
+.navbars_brand b{
+    display: flex;
+    align-items: center;
+    /* border: 0.2mm solid red; */
+    
+}
+
+.navbars_items{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* border: 0.2mm solid yellow; */
+    width: 100%;
+    font-size: 0.55cm;
+}
+
+.navbars_item_{
+    /* border: 0.2mm solid red; */
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0cm 0.75cm;
+    cursor: pointer;
+    color: wheat;
+    text-decoration: none;
+}
+
+
+.navbars_item_ span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 0.1cm;
+}
+
+.navbars_item_:hover{
+    transition: 0.4s;
+    color: rgb(148, 125, 84);
+    text-decoration: none;
+}
+
+
+
+.search_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 1cm;
+    width: 1.4cm;
+    font-size: 0.65cm;
+    
+}
+
+
+
+/* Drawer Css */
+.drawer_btn_div{
+    display: none;
+}
+
+.drawer_btn_div button{
+    z-index: 0;
+}
+
+.drawer_page_div{
+    position: fixed;
+    overflow: visible;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(4, 4, 4,0.5);
+    z-index: 8;
+    top: 0;
+}
+
+.drawer_page_inner_div{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* position: absolute; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 60%;
+    animation-name: drawers;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+.navbars_item_cross{
+    font-size: 1cm;
+    /* border: 0.2mm solid yellow; */
+    padding: 0cm 0.15cm;
+    z-index: 1;
+}
+
+.drawer_btn{
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 0.59cm;
+    border: 0.2mm solid black;
+    padding: 0.2cm 0.35cm;
+    border-radius: 0.15cm;
+    background-color: #007bff;
+}
+
+.drawer_btn:hover{
+    background-color: #006de1;
+}
+
+@keyframes drawers {
+    from{width: 43%;}
+    to{width: 60%;};
+}
+
+.navbars_item_ b{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media only screen and (max-device-width:1100px)  {
+    .navbars_items{
+        display: none;
+        flex-direction: row;
+    }
+
+    .navbars_item_{
+        display: flex;
+        flex-direction: row;
+        padding: 0.35cm 0.5cm;
+        font-size: 0.55cm;
+    }
+
+    .drawer_btn_div{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 0.2cm;
+        width: 100%;
+   
+    }
+
+    .search_btn{
+        margin-right: 0.1cm;
+    }
+   
+}
+

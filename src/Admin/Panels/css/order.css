@@ -1,0 +1,17 @@
+.order-panel-main{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    margin-top: 1.1cm;
+    padding: 0.3cm;
+}
+
+.order-panel-main h2{
+    color: whitesmoke;
+}
+
+.order-contents{
+    /* border: 0.2mm solid red; */
+    height: 14cm;
+    overflow-y:auto;
+}

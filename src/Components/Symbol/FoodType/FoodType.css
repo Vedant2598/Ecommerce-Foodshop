@@ -1,0 +1,9 @@
+.food-type-border{
+    display: flex;
+    align-items: center;
+    width: max-content;
+    padding: 0.1cm;
+    font-size: 0.5cm;
+    border-radius:0.05cm ;
+  
+}

@@ -1,0 +1,216 @@
+
+.product-favourite-card {
+    display: flex;
+    align-items: center;
+    width: 32%;
+    min-width: 10cm;
+    height:6cm;
+    background-color: #ebebeb;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.2cm;
+    /* cursor: pointer; */
+    transition: 0.5s;
+    margin-right: 0.2cm;
+    /* height: 5.5cm; */
+    /* height: 40%; */
+    padding: 0.3cm 0.3cm;
+    position: relative;
+  }
+
+
+  .product-favourite-image-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 6cm; */
+    width: 4.5cm;
+    min-width: 4.5cm;
+    height: 4.5cm;
+    /* border: 0.2mm solid red; */
+    overflow: hidden;
+  }
+
+  .product-favourite-card img {
+    width: 100%;
+    height: 100%;
+    margin-top: 0.25cm;
+    margin-bottom: 0.25cm;
+    margin-left: 0.15cm;
+    margin-right: 0.15cm;
+    /* border: 0.2mm solid red; */
+    
+  }
+  
+  .product-favourite-info {
+    width: 100%;
+    padding: 0.3cm 0.3cm;
+    overflow: hidden;
+ 
+    /* border: 0.2mm solid red; */
+  }
+  
+  .product-favourite-title {
+    font-size: 21px;
+    margin: 0;
+    text-align: left;
+  }
+  
+  .product-favourite-description {
+    
+    text-overflow:ellipsis;
+    white-space: wrap;
+    overflow:hidden;
+    height: 1.05cm;
+    width: 4cm;
+    font-size: 14px;
+    color: #888;
+    /* border: 0.2mm solid red; */
+    margin: 10px 0;
+    
+  }
+  
+  .product-favourite-price {
+    text-overflow: ellipsis;
+    /* text-decoration: line-through; */
+    overflow: hidden;
+    font-size: 19px;
+    margin: 4px 0;
+  }
+
+  .product-favourite-price-cut{
+    text-overflow: ellipsis;
+    text-decoration: line-through;
+    color: red;
+    overflow: hidden;
+    font-size: 19px;
+    margin: 4px 0;
+    margin-right: 0.15cm;
+  }
+
+  .product-favourite-discount{
+    
+    overflow: hidden;
+    font-size: 13px;
+    /* color: rgb(55, 170, 30); */
+    background-color: rgb(55, 170, 30);
+    color: whitesmoke;
+    padding: 0.1cm 0.2cm;
+    border-radius: 0.1cm;
+    /* margin: 4px 0; */
+  }
+
+  .product-favourite-btns{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* border: 0.2mm solid red; */
+}
+
+.product-favourite-btns div{
+    display: flex;
+}
+
+.view-btn{
+        min-width: 3cm;
+}
+
+  @media only screen and (max-device-width:1180px) {
+    .product-favourite-card {
+        display: flex;
+        width: 100%;
+        height: 5.5cm;
+        background-color: #fff;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 0.2cm;
+        cursor: pointer;
+        transition: 0.5s;
+        margin-right: 0cm;
+        z-index: 1;
+       
+      }
+
+      .product_image_div{
+        display: flex;
+        align-items: center;
+        /* width: 5cm;
+        height: 5.5cm; */
+        /* border: 0.2mm solid red; */
+      }
+
+      .product-favourite-card img {
+        width: 100%;
+        height: 80%;
+        margin-top: 0.25cm;
+        margin-bottom: 0.25cm;
+        margin-left: 0.15cm;
+        margin-right: 0.15cm;
+        /* border: 0.2mm solid red; */
+      }
+
+      .product-favourite-title {
+        /* font-size: 23px; */
+        margin: 0;
+      }
+      
+  }
+  
+  @media only screen and (max-device-width:700px) {
+    .product-favourite-card {
+        display: flex;
+
+        width: 99%;
+   
+        min-width: 9cm;
+        height: 5cm;
+        background-color: #fff;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 0.2cm;
+        cursor: pointer;
+        transition: 0.5s;
+        margin-right: 0.1cm;
+        z-index: 1;
+        
+       
+      }
+
+      .product-favourite-image-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* width: 6cm; */
+        /* width: 4.5cm; */
+        min-width: 3.5cm;
+        height: 3.5cm;
+        /* border: 0.2mm solid red; */
+        overflow: hidden;
+      }
+
+      .product-favourite-card img {
+        width: 100%;
+        height: 80%;
+        margin-top: 0.25cm;
+        margin-bottom: 0.25cm;
+        margin-left: 0.15cm;
+        margin-right: 0.15cm;
+        /* border: 0.2mm solid red; */
+      }
+
+      .product-favourite-title {
+        font-size: 17px;
+        margin: 0;
+      }
+      
+      .product-favourite-price {
+       
+        font-size: 17px;
+ 
+      }
+    
+      .product-favourite-price-cut{
+        
+        font-size: 17px;
+        
+      }
+  
+
+  }

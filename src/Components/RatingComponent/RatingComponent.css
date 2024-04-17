@@ -1,0 +1,112 @@
+.rating-product-parent{
+    
+    padding: 0.2cm 0.4cm;
+    margin-top: 0.1cm;
+    border-radius: 0.2cm;
+    border: 0.2mm solid rgb(167, 167, 167);
+    background-color: rgb(223, 223, 223);
+    /* height: fit-content; */
+    /* box-shadow: 0px 1px 4px rgb(0, 0, 0, 0.1); */
+}
+
+.rating-number-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0.7cm;
+    /* border: 0.2mm solid red; */
+}
+
+.rating-number-div b{
+    /* border: 0.2mm solid red; */
+    font-weight: 450;
+    font-size: 0.65cm;
+    margin-right: 0.3cm;
+}
+.rating-number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: whitesmoke;
+    padding: 0cm 0.4cm;
+    border-radius: 0.1cm;
+}
+.rating-number b{
+    margin-right: 0.1cm;
+}
+
+.rating-number span{
+    display: flex;
+    align-items: center;
+    font-size: 0.65cm;
+
+}
+
+
+
+
+.rating-stars{
+    display: flex;
+    border: 0.2mm solid rgb(147, 147, 147);
+    padding: 0cm 0.4cm;
+    border-radius: 0.1cm;
+    width: fit-content;
+    background-color: rgb(59, 64, 69);
+}
+
+.rating-stars span{
+    display: flex;
+    align-items: center;
+    font-size: 1.3cm;
+    color: gold;
+    cursor: pointer;
+}
+
+.rating-bars{
+    padding: 0.1cm;
+    width: 7cm;
+    height: 5cm;
+    /* border: 0.2mm solid red; */
+}
+
+.rating-bars-div{
+    position: relative;
+    overflow: hidden;
+    border: 0.2mm solid rgb(82, 81, 81);
+    height: 0.4cm;
+    width: 100%;
+    border-radius: 0.1cm;
+}
+
+.rating-bars span{
+    position: absolute;
+    /* width: 1%; */
+    height: 0.4cm;
+}
+
+.rating-5{
+    width: 90%;
+    background-color: rgb(55, 128, 0);
+}
+
+.rating-4{
+    width: 75%;
+    background-color: rgb(149, 191, 11);
+}
+.rating-3{
+    width: 3%;
+    background-color: rgb(220, 202, 40);
+}
+.rating-2{
+    width: 1%;
+    background-color: rgb(226, 173, 75);
+}
+.rating-1{
+    width: 1%;
+    background-color: red;
+}
+
+@media only screen and (max-device-width:680px){
+   
+}

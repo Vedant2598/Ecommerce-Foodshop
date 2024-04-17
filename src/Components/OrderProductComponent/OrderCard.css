@@ -1,0 +1,126 @@
+.orders-product-container {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 31%;
+    min-width: 8cm;
+    height: fit-content;
+    min-height: 6cm;
+    margin: 0.1cm 0.2cm;
+    border: 0.2mm solid rgb(202, 202, 202);
+    cursor: pointer;
+  }
+  
+  .orders-product-container:hover {
+    background-color: rgb(244, 244, 244);
+  }
+  
+  .order-details {
+    display: flex;
+
+    justify-content: center;
+    /* margin-bottom: 20px; */
+  }
+  
+  .orders-product-image {
+    position: relative;
+    width: 4cm;
+    height: 4cm;
+    border-radius: 8px;
+    margin-right: 20px;
+    z-index: 1;
+    /* border: 0.2mm solid red; */
+  }
+  
+  .orders-product-info  {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 55%;
+
+     /* border: 0.2mm solid rgb(0, 255, 42); */
+  }
+  
+  .orders-product-info b{
+      font-size: 0.5cm;
+    }
+  
+  .orders-product-info p {
+    margin: 0;
+  }
+  
+  .order-status {
+    text-align: left;
+    border: 0.2mm solid red;
+    margin: 10px 0;
+    width: 100%;
+  }
+  
+  .delivery-date {
+    margin: 10px 0;
+  }
+
+  .orders-product-items-count{
+    background-color: rgba(0, 0, 0, 0.581);
+    padding: 0.35cm;
+    color: whitesmoke;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
+ .orders-product-info-price{
+  font-weight: 600;
+  background-color: rgb(205, 205, 205);
+  padding:0cm 0.15cm;
+  border-radius: 0.1cm;
+ }
+
+ .orders-product-delivery-date{
+  color: whitesmoke;
+  padding: 0cm 0.2cm;
+  border-radius: 0.1cm;
+  background-color: rgb(70, 121, 172);
+ }
+  
+ 
+  
+ 
+
+  @media only screen and (max-device-width:1050px) {
+    .orders-product-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+        width: 97%;
+        min-height: none;
+        height: fit-content;
+        /* border: 0.2mm solid red; */
+      }
+      .order-details{
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      .orders-product-image {
+        width: 3cm;
+        height: 3cm;
+        border-radius: 8px;
+        margin-right: 20px;
+        /* border: 0.2mm solid red; */
+      }
+      .orders-product-info  {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 55%;
+
+        /* border: 0.2mm solid red; */
+    }
+    .orders-product-info b{
+        font-size: 0.45cm;
+      }
+  }

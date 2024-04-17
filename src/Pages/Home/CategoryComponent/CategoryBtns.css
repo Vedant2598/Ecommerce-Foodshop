@@ -1,0 +1,102 @@
+.category_parent_div{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   padding: 0.2cm 0.1cm;
+   
+   overflow: hidden;
+   height: 7cm;
+   width: 100%;
+}
+
+.category_div{
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+
+   border: 0.2mm ridge wheat;
+   background-color: rgb(62, 63, 68);
+   flex-direction: row;
+   height: 6.65cm;
+   width: 98%;
+   padding: 0.25cm 0.25cm;
+   transition: 0.25s;
+   border-radius: 0.15cm;
+   overflow-x: auto;
+   overflow-y: hidden;
+ }
+
+ .category_div img{
+   background-size: contain;
+   width: 4cm;
+   height: 4cm;
+}
+
+.category_div button{
+   color: whitesmoke;
+   font-size: 0.6cm;
+   text-shadow: 0.2mm 0.2mm black;
+   transition: 0.25s;
+   box-shadow: 0.7mm 0.7mm rgb(197, 197, 197);
+   background-color: rgb(197, 66, 66);
+   border: 0.2mm solid white;
+   border-radius: 0.2cm;
+   margin-right: 0.5cm;
+   height: 6cm;
+}
+
+.category_div button:hover{
+   background-color: rgb(147, 50, 50);
+}
+
+
+/* FOR TABS */
+ @media only screen and (max-device-width:1100px)  {
+
+   .category_parent_div{
+      height: 6cm;
+   }
+
+   .category_div{
+      justify-content:center;
+      align-content: center;
+      height: 5.6cm;
+   }
+   
+   .category_div img{
+      width: 3cm;
+      height: 3cm;
+   }
+
+   .category_div button{
+      font-size: 0.55cm;
+      height: 5cm;
+   }
+}
+
+/* FOR MOBILE */
+@media only screen and (max-device-width:650px)  {
+
+   .category_parent_div{
+      height: 3.45cm;
+   }
+
+   .category_div{
+      justify-content:flex-start;
+      height: 3.1cm;
+   }
+   
+   .category_div img{
+      /* width: 2.5cm;
+      height: 2.5cm; */
+      width: 2cm;
+      height: 2cm;
+   }
+
+   .category_div button{
+      font-size: 0.4cm;
+      /* height: 3.25cm; */
+      height: 2.6cm;
+   }
+}

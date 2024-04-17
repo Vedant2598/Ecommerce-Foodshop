@@ -1,0 +1,69 @@
+/* OrdersTable.css */
+
+.orders-table {
+  position: relative;
+    width: 100%;
+    border-collapse: collapse;
+    /* margin-top: 20px; */
+
+  }
+  
+  .orders-table thead {
+    position: sticky;
+    top: 0;
+  }
+
+ 
+
+  .orders-table th {
+    border: 1px solid #ddd;
+    background-color: #f2f2f2;
+    padding: 8px;
+    text-align: left;
+  }
+
+  .orders-table td{
+    /* border: 1px solid #ddd; */
+
+    top: 0;
+    padding: 8px;
+    text-align: left;
+    color: whitesmoke;
+    /* background-color: rgb(85, 85, 85); */
+  }
+
+
+  .orders-table tr:nth-child(even) {
+    background-color: rgb(99, 117, 129);
+  }
+  .orders-table tr:nth-child(odd) {
+   background-color: rgb(81, 88, 95);
+  }
+  
+  .order-product-list_{
+    display: flex;
+    flex-direction: column;
+  }
+
+ .order-product-list_ div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.2cm;
+    border: 0.2mm solid rgb(202, 202, 202);
+    background-color: rgb(59, 75, 87);
+    border-radius: 0.1cm;
+    margin-bottom: 0.2cm;
+  }
+
+  .status-ordered{
+    color: red;
+  }
+
+  .status-out-for-delivery{
+    color: yellow;
+  }
+
+  .status-delivered{
+    color: rgb(35, 200, 35);
+  }

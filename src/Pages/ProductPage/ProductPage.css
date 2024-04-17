@@ -1,0 +1,303 @@
+.product-info-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(200, 200, 200);
+    overflow-y: auto;
+    z-index: 5;
+}
+
+.product-info-parent-navbar{
+    /* border:0.2mm solid red; */
+    display: flex;
+    align-items: center;
+    position: relative;
+    width:100%;
+    height: fit-content;
+    padding:0.2cm 0.5cm;
+    background-color: rgb(39, 39, 39);
+}
+
+.product-info-parent-navbar div{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    /* border: 0.2mm solid red; */
+}
+.icons_{
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 0.7cm;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 0.2cm 0.25cm;
+}
+.icons_:hover{
+    color: rgb(190, 190, 190);
+}
+.cart-total-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: whitesmoke;
+    background-color: red;
+    font-size: 0.45cm;
+    top: 0;
+    left: 0;
+    border-radius: 0.5cm;
+    height: 0.5cm;
+    width: 0.5cm;
+}
+
+.product-info-parent{
+    display: flex;
+    position: relative;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    /* border: 0.2mm solid red; */
+}
+
+.product-info-left-col{
+    position: relative;
+    /* position: sticky; */
+    flex-grow: 1;
+    top: 0;
+    height: 100%;
+    /* height: fit-content; */
+    /* border: 0.2mm solid green; */
+    min-width: 14cm;
+    width: 35%;
+    white-space: nowrap;
+    background-color: rgb(222, 222, 222);
+}
+
+.product-info-right-col{
+    position: relative;
+    right: 0.01cm;
+    /* border: 0.2mm solid rgb(205, 16, 16); */
+    /* background-color: rgb(207, 207, 207); */
+    background-color: rgb(214, 214, 214);
+    white-space: nowrap;
+    width: 64%;
+    /* height: 100%; */
+    height: fit-content;
+    margin-left: 0.1cm;
+    padding: 0.4cm 0.3cm;
+    /* min-width: 18cm; */
+    /* overflow-y: auto; */
+}
+
+.product-info-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 0.2mm solid rgb(0, 8, 255); */
+    width: 100%;
+    height: 65%;
+    /* width: 10cm; */
+}
+
+.product-info-image img{
+    max-width: 10cm;
+    max-height: 10cm;
+}
+
+.product-info-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.2cm 0cm;
+    user-select: none;
+}
+
+.product-info-buttons button{
+    width: 50%;
+    border: 0.2mm solid black;
+    /* border-radius: 0.1cm; */
+    padding: 0.3cm 0.2cm;
+    font-size: 0.45cm;
+    border-radius: 0.1cm;
+}
+
+.product-info-add-to-cart{
+    background-image: linear-gradient(to right,rgb(214, 174, 63),rgb(236, 169, 83),rgb(230, 186, 14));
+}
+
+
+.product-info-buy-now{
+    background-image: linear-gradient(to right,rgb(224, 186, 104),rgb(221, 159, 25),rgb(252, 175, 60));
+}
+
+.product-info-add-to-cart:hover, .product-info-buy-now:hover{
+    background-image: linear-gradient(to right,rgb(207, 162, 38),rgb(226, 153, 56),rgb(230, 126, 14));
+}
+
+
+.product-info-description{
+    display: flex;
+   overflow: hidden;
+    word-wrap: break-word;
+    white-space: wrap;
+    height: max-content;
+    font-size: 0.35cm;
+}
+.product-info-price{
+    display: flex;
+    align-items: center;
+    /* border: 0.2mm solid red; */
+    font-size: 0.85cm;
+    font-weight: bold;
+    padding: 0.1cm 0cm;
+}
+
+
+.product-info-favoutite-div{
+    display: flex;
+    padding: 0cm 0.2cm;
+    justify-content: flex-start;
+    /* border: 0.2mm solid red; */
+}
+
+.heart-btn{
+    color: whitesmoke;
+    border: 0mm solid whitesmoke;
+    font-size: 0.65cm;
+    background-color: rgb(52, 52, 52);
+    border-radius: 0.1cm;
+    transition: 0.15s;
+    width: 1.2cm;
+    height: 1.2cm;
+    /* margin-left: 0.75cm; */
+
+}
+
+.heart-btn-selected{
+    color: rgb(255, 0, 0);
+}
+
+.product-info-additional-options{
+    padding: 0.2cm 0.3cm;
+    background-color: rgb(226, 226, 226);
+    border: 0.2mm solid rgb(157, 157, 157);
+    border-radius: 0.1cm;
+}
+
+
+/* PRODUCT SIZE OPTION CSS */
+.product-page-size-option{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(189, 189, 189);
+    border: 0.2mm solid rgb(144, 144, 144);
+    width: fit-content;
+    padding: 0.2cm 0cm;
+    padding-left: 0.2cm;
+    border-radius: 0.1cm;
+    margin-bottom: 0.2cm;
+    /* overflow: hidden; */
+}
+
+.product-page-size-option label{
+    /* color: rgb(204, 204, 204); */
+    color: rgb(0, 0, 0);
+    font-size: 0.5cm;
+    min-width: 3.5cm;
+
+    /* border: 0.2mm solid red; */
+}
+.product-page-size-option div{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.product-page-size-option input{
+    transform: scale(1.7);
+    color: red;
+    cursor: pointer;
+}
+
+.product-option-heading{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.4cm;
+    margin-top: 0.2cm;
+    /* box-shadow: 0px 2px 4px rgb(0, 0, 0); */
+}
+.product-option-heading h4{
+   display: flex;
+   align-items: center;
+}
+.product-option-heading span{
+    width: 100%;
+    border-bottom: 0.65mm solid rgb(173, 173, 173);
+}
+
+
+@media only screen and (max-device-width:1050px) {
+    .product-info-left-col{
+        position: relative;
+        height: fit-content;
+        width: 100%;
+        min-width: 0.1cm;
+    }
+
+    .product-info-right-col{
+        position: relative;
+        width: 100%;
+        margin-left: 0cm;
+        padding: 0.2cm 0.1cm;
+        height: fit-content;
+        /* overflow-x: hidden; */
+    }
+
+    .product-info-parent{
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .product-info-parent-navbar{
+        padding:0.2cm 0.15cm;
+    }
+
+    .product-quantity-div button{
+        font-size: 0.5cm;
+        padding: 0.2cm 0.5cm;
+    }
+
+    .product-quantity-div{
+        font-size: 0.5cm;
+        padding: 0.1cm 0cm;
+    }
+  
+
+    .product-info-image{
+        padding: 0.3cm;
+        margin-top: 0.1cm;
+        height: 10cm;
+    }
+
+    /* .product-info-additional-options{
+        padding: 0cm 0.4cm;
+    } */
+
+   
+
+    .product-page-size-option input{
+        transform: scale(1.4);
+        color: red;
+    }
+}

@@ -1,0 +1,279 @@
+.place-order-parent{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* border: 0.2mm solid red; */
+    background-color: rgb(214, 214, 214);
+    z-index: 6;
+}
+
+.place-order-navbar{
+    display: flex;
+    justify-content: center;
+     background-color: rgb(47, 48, 52);
+     color: whitesmoke;
+     /* background-color: rgb(208, 208, 208); */
+     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.158);
+     padding: 0.15cm 0.5cm;
+     font-size: 0.6cm;
+}
+
+.place-orders-list{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    /* border: 0.2mm solid red; */
+    width: 100%;
+    height: 93%;
+    overflow-y: auto;
+}
+
+.place-orders-list-card{
+    margin-top: 0.2cm;
+    border: 0.2mm solid rgb(162, 162, 162);
+    box-shadow: 0px 4px 4px rgb(0, 0, 0,0.3);
+    background-color: rgb(228, 228, 228);
+    width: 20cm;
+    /* height: 95%; */
+    height: fit-content;
+    padding: 0.3cm;
+    margin-bottom: 0.2cm;
+
+}
+
+.place-orders-product-lists label{
+    display: flex;
+    border: 0.2mm solid green;
+    /* justify-content: flex-start; */
+    padding: 0cm 0.3cm;
+    font-size: 0.55cm;
+    width: 49%;
+}
+
+.place-orders-final-price{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.1cm;
+    border: 0.2mm solid rgba(49, 49, 49, 0.345);
+    background-color: rgb(233, 233, 233);
+    width: 100%;
+    font-size: 0.55cm;
+    /* box-shadow: 0px 3px 7px rgb(0, 0, 0,0.2); */
+}
+
+.place-orders-final-price div{
+    display: flex;
+    width: 100%;
+    
+    /* border: 0.2mm solid rgb(35, 210, 8); */
+}
+
+.place-orders-final-price label{
+    margin-top: 0.2cm;
+    padding: 0.1cm 0.3cm;
+    color: rgb(58, 58, 58);
+    /* border: 0.2mm solid red; */
+    width: 50%;
+    font-size: 0.55cm;
+}
+
+.place-order-heading{
+    display: flex;
+    font-size: 0.58cm;
+    margin-top: 0.1cm;
+    padding: 0cm 0.3cm;
+    flex-direction: column;
+    background-color: rgb(47, 47, 47);
+    /* background-color: rgb(17, 151, 224); */
+    color: whitesmoke;
+    /* box-shadow: 0px 1px 8px rgb(0, 0, 0,0.5); */
+}
+
+
+.place-orders-address{
+    /* width: 19.4cm; */
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background-color: rgb(238, 238, 238);
+    border: 0.2mm solid rgb(0, 0, 0, 0.25); 
+}
+
+.place-orders-address-radios-div{
+    display: flex;
+    align-items: center;
+    padding: 0.2cm 0.1cm;
+    /* height: fit-content; */
+}
+.place-orders-address-radios-div input{
+    cursor: pointer;
+    margin-left: 0.5cm;
+    margin-right: 0.15cm;
+    transform: scale(1.35);
+}
+
+.place-orders-address-input-div{
+   display: flex;
+   flex-direction: column;
+   padding: 0.2cm 0.4cm;
+   /* border: 0.2mm solid red; */
+}
+
+/* PAYMENT STYLES */
+.place-orders-payment{
+    /* width: 19.4cm; */
+    height: fit-content;
+    background-color: rgb(238, 238, 238);
+    border: 0.2mm solid rgb(0, 0, 0, 0.25);
+}
+
+.place-orders-payment label{
+    margin-left: 0.5cm;
+}
+
+.place-orders-payment input{
+    transform: scale(1.5);
+}
+
+.place-orders-payment div{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: fit-content;
+    padding: 0cm 0.4cm;
+    width: 100%;
+    background-color: rgb(238, 238, 238);
+    border: 0.2mm solid rgb(0, 0, 0, 0.25);
+}
+
+
+/* ORDER SUCCESS PAGE */
+.order-success-page-parent{
+    /* border: 0.1mm solid blue; */
+    height: 92%;
+    padding: 0.2cm;
+}
+
+.order-success-page{
+    display: flex;
+    justify-content: center;
+    /* border: 0.2mm solid green; */
+    height: 100%;
+}
+
+.order-success-page div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.4cm;
+    background-color: rgb(235, 235, 235);
+    /* height: 10cm; */
+    height: fit-content;
+    width: 15cm;
+    border: 0.2mm solid rgb(139, 139, 139);
+    border-radius: 0.2cm;
+    padding: 1.5cm 0.25cm;
+}
+
+.order-success-page p{
+    margin-top: 0.3cm;
+    text-align:center;
+    width:100%
+}
+
+.order-success-button{
+    border: 0.1mm solid rgb(109, 109, 109);
+    border-radius: 0.1cm;
+    color: whitesmoke;
+    font-size: 0.6cm;
+    padding: 0.05cm 0.4cm;
+    background-color: rgb(46, 172, 34);
+    /* background-image: linear-gradient(to right,rgb(255, 218, 51),rgb(177, 128, 2)); */
+}
+.order-success-button:hover{
+    background-color: rgb(37, 136, 28);
+}
+
+.check-icon{
+    display: flex;
+    /* margin-top: 1cm; */
+    align-items: center;
+    justify-content: center;
+    width: 2.2cm;
+    height: 2.2cm;
+    font-size: 1.5cm;
+    border-radius: 1.2cm;
+    color: whitesmoke;
+    background-color: rgb(58, 150, 35);
+    border: 0.2mm solid rgb(36, 166, 36);
+}
+
+
+
+/* INPUT COMPONENT WHICH DIFFERENT FROM DEFAULT EXPORT */
+.place-orders-input-div{
+    display: flex;
+    flex-direction: column;
+    padding: 0.2cm 0cm;
+    justify-content: center;
+    margin-right: 0.2cm;
+    /* border: 0.2mm solid red; */
+}
+.place-orders-input-div input{
+    border: 0.2mm solid rgb(101, 101, 101);
+    background-color: rgb(205, 205, 205);
+    border-radius: 0.1cm;
+    margin-top: 0cm;
+    width: 99%;
+    /* min-width: 7cm; */
+    padding: 0.1cm 0.5cm;
+}
+
+.place-orders-input-div label{
+    font-weight: 600;
+    font-size: 0.5cm;
+    margin-bottom: -0.025cm;
+}
+
+@media only screen and (max-device-width:800px) {
+    .place-orders-list-card{
+        margin-top: 0cm;
+        /* border: 0.2mm solid rgb(141, 141, 141); */
+        box-shadow: 0px 4px 4px rgb(0, 0, 0,0.3);
+        width: 100%;
+        height: fit-content;
+        padding: 0.1cm;
+    }
+    .place-orders-final-price{
+        display: flex;
+        border: 0.2mm solid rgb(168, 168, 168);
+        width: 100%;
+        padding: 0.1cm;
+    }
+    .place-orders-final-price label{
+      
+        font-size: 0.5cm;
+    }
+    
+
+
+    .place-orders-payment input{
+        transform: scale(1.25);
+        
+    }
+    
+    .place-orders-payment div{
+
+        padding: 0.3cm 0.4cm;
+        
+    }
+
+    .order-success-page div{
+        overflow: wrap;
+        width: 100%;
+       
+    }
+}

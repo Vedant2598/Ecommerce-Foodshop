@@ -1,0 +1,118 @@
+.admin-panel-screen-parent{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    /* border: 0.2mm solid red; */
+    width: 100%;
+    height: 100%;
+    margin-top: 1.4cm;
+    
+}
+
+.admin-panel-screen{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* border: 0.2mm solid red; */
+    height: 92%;
+    width: 99%;
+    overflow: hidden;
+}
+
+.admin-heading-div{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 0.75cm;
+    font-weight:510;
+}
+
+.admin-heading-div span{
+    display: flex;
+    align-items: center;
+    margin-left: 0.2cm;
+}
+
+.admin-heading-div div{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    right: 0.2cm;
+    /* border: 0.2mm solid rgb(68, 255, 0); */
+}
+
+.admin-heading-div button{
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+    right: 0.35cm;
+    border: 0.2mm solid rgb(255, 255, 255);
+    font-size: 0.45cm;
+    background-color: black;
+    padding: 0.1cm 0.4cm;
+    border-radius: 0.2cm;
+    color: whitesmoke;
+    transition: 0.2s;
+    margin-left: 0.2cm;
+    margin-right: 0.2cm;
+}
+
+.admin-heading-div button:hover{
+    border: 0.2mm solid rgb(0, 0, 0);
+    font-size: 0.45cm;
+    background-color: whitesmoke;
+    padding: 0.1cm 0.4cm;
+    border-radius: 0.2cm;
+    color: black;
+}
+
+
+
+
+.admin-search-div{
+    margin-top: 0.3cm;
+    display: flex;
+    align-items: center;
+    /* background-color: black; */
+    height: 1cm;
+    overflow: visible;
+    z-index: 0;
+}
+
+
+.admin-panel-list-content-div{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-self: center;
+    display: flex;
+    /* border: 0.2mm solid rgb(43, 255, 0); */
+    height: 90%;
+    width: 99%;
+    align-self:center;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+
+@media only screen and (max-device-width:1000px) {
+    .admin-panel-list-content-div{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        overflow-y: auto;
+        
+    }
+
+    .admin-heading-div{
+        
+        justify-content:flex-start;
+        
+    }
+    
+}

@@ -1,0 +1,82 @@
+.orders-parent-div{
+    position: relative;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 10cm; */
+    /* border: 0.2mm solid red; */
+}
+
+.orders-search-div{
+    position: sticky;
+    top: 0;
+    padding: 0.1cm 0.24cm;
+    width: 100%;
+    background-color:rgb(225, 225, 225);
+    z-index: 2;
+}
+
+ .order-tracking-title {
+    display: flex;
+    align-items: center;
+    /* color: #3498db; */
+    color: whitesmoke;
+    padding: 0.1cm 0.3cm;
+    border-radius: 0.2cm;
+    background-color: rgb(30, 30, 30);
+    margin: 0.1cm 0cm;
+    width: 99%;
+  }
+  .order-tracking-title span{
+    display: flex;
+    align-items: center;
+    margin-right: 0.2cm;
+  }
+  .order-tracking-title b{
+    display: flex;
+    align-items: center;
+  }
+
+.orders-parent-container{
+    /* border: 0.2mm solid red; */
+    width: 100%;
+    padding: 0.2cm 0cm;
+    padding-left: 0.4cm;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 10cm;
+    height: fit-content;
+    justify-content: flex-start;
+
+}
+
+.order-empty-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /* border: 0.2mm solid red; */
+  width: 99%;
+
+}
+
+.order-empty-div img{
+  width: 7cm;
+  height: 7cm;
+}
+
+@media only screen and (max-device-width:1050px) {
+    .orders-parent-container{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0cm;
+        overflow: hidden;
+    }
+    .orders-search-div{
+        padding: 0.1cm 0.1cm;
+    }
+    
+}

@@ -1,0 +1,76 @@
+.users-table{
+    /* border: 0.2mm solid red; */
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    border-collapse: collapse;
+}
+
+.users-table th{
+    /* text-align: center; */
+    /* display: flex; */
+    position: sticky;
+    top: 0;
+    padding: 0cm 0.4cm;
+    background-color: whitesmoke;
+}
+
+.users-table td{
+    color: whitesmoke;
+    padding: 0.2cm 0.4cm;
+    /* text-align: center; */
+    max-height: 1cm;
+
+}
+
+.users-table tr{
+    max-height:1cm;
+    
+}
+
+.users-table tr:nth-child(odd){
+    background-color: rgb(51, 55, 69);
+}
+
+.users-table tr:nth-child(even){
+    background-color: rgb(59, 68, 93);
+}
+
+
+
+
+/* USERS OTHER ELEMENTS */
+.admin-heading-div-users{
+    display: flex;
+    flex-direction: row;
+    padding: 0.2cm 0cm;
+}
+
+.admin-heading-div-users div{
+    display: flex;
+    align-items: center;
+    font-size: 0.7cm;
+    color: whitesmoke;
+    /* border: 0.2mm solid red; */
+}
+
+.admin-heading-div-users span{
+    display: flex;
+    align-items: center;
+    /* height: 100%; */
+    /* border: 0.2mm solid red; */
+    margin-top: 0.1cm;
+    margin-left: 0.1cm;
+}
+
+.admin-heading-users-buttons{
+    display: flex;
+    justify-content: right;
+    /* border: 0.2mm solid red; */
+    width: 74%;
+}
+
+.admin-heading-users-buttons button{
+
+    font-size: 0.5cm;
+}

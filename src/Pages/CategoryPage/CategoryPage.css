@@ -1,0 +1,36 @@
+.category-page-parent{
+    position: relative;
+    width: 100%;
+    height:fit-content;
+    padding: 0.2cm;
+    /* border: 0.2mm solid green; */
+    /* overflow: hidden; */
+}
+
+.category-heading{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    border: 0.2mm solid rgb(72, 104, 162);
+    /* background-color: rgb(72, 104, 162); */
+    background-color: rgb(39, 42, 47);
+    color: whitesmoke;
+    width: 100%;
+    padding: 0cm 0.25cm;
+    margin-bottom: 0.2cm;
+    border-radius: 0.1cm;
+    font-size: 0.65cm;
+    font-weight: 500;
+}
+
+
+.category-page-card{
+    position: relative;
+    display: flex;
+    /* flex-direction: row; */
+    /* border: 0.2mm solid rgb(128, 0, 0); */
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    min-height: 12cm;
+}
