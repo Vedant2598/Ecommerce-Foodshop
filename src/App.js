@@ -21,7 +21,7 @@ import NotifyBox from "./Components/Box/NotifyBox/NotifyBox";
 
 import {adminCheck, authCheck} from "./Methods/authHandler"
 import { useEffect, useState } from "react";
-import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
+import {HashRouter as Router,Routes,Route} from 'react-router-dom'
 import Footer from "./Components/Footer/Footer";
 import { clientPostAxios } from "./Methods/RequestHandler";
 import { useDispatch, useSelector } from "react-redux";
