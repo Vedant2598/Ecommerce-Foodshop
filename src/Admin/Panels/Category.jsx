@@ -20,10 +20,12 @@ export default function Category() {
       setpageDisplay(false)
       let result=await adminAxiosPost(process.env.REACT_APP_ADMIN_ROUTE+"/getCategory",{})
       if(result){
-        setarr(result.data)
-        if(result.data.length>0){
-          setpageDisplay(true)
-        }
+       
+          setarr(result.data)
+          if(result.data.length>0){
+            setpageDisplay(true)
+          }
+        
       }
   }
 

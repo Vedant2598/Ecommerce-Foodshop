@@ -59,7 +59,7 @@ const OrderTrackingSteps=(props)=>{
 
     useEffect(()=>{
         socket.on("TrackEmitClient",(payload)=>{
-
+            alert(`${payload.orderId,selector.orderId}`)
             if(payload.orderId===selector.orderId){
 
                 setstep(stepName.indexOf(payload.message)+1)

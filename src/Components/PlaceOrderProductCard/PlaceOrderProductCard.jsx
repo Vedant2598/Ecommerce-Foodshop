@@ -17,8 +17,7 @@ export default function PlaceOrderProductCard(props) {
             <label className='place-order-component-title'>{props.title}</label>
             <label className='place-order-component-size'>Size | {props.size}</label>
             <label className='place-order-quantity'>Quantity : {props.quantity}</label>
-
-            <label className='place-order-price'> <b>₹ {((price+sizePrice)-parseInt(((price+sizePrice)*(props.discount/100))))*parseInt(props.quantity)}.00</b></label>
+            <label className='place-order-price'> <b>₹ {((price)-parseInt(((price)*(props.discount/100))))*parseInt(props.quantity)}.00</b></label>
         </div>
     </div>
   </>

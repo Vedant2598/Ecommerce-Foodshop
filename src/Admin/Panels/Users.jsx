@@ -32,10 +32,13 @@ export default function Users() {
         }
        let result=await adminAxiosPost(process.env.REACT_APP_ADMIN_ROUTE+"/getUserData",{search:searchs})
        if(result){
-           setarr(result.data)
-           if(result.data.length>0){
-               setsearchResult(true)
+           
+            // alert(result.data)
+            setarr(result.data)
+            if(result.data.length>0){
+                setsearchResult(true)
             }
+            
         }
     }
     useEffect(()=>{
@@ -69,13 +72,18 @@ export default function Users() {
                 <tbody>
                     {searchResult&&
                     <>
+                    {arr.length>=0&&
+
+                        <>
                         {arr.map((user)=>(
                             <>
                             <UserList userId={user._id} username={user.name} phone={user.phone} email={user.email}/>
             
                             </>
                         ))
-                        }
+                    }
+                    </>
+                    }
                     </>
                     }
                     

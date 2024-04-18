@@ -40,9 +40,12 @@ export default function Products() {
     const categoryFetch=async()=>{
         let result=await adminAxiosPost(process.env.REACT_APP_ADMIN_ROUTE+"/getCategory",{})
         if(result){
-          result.data.map((category)=>{
-            options.push(category.name)
-          })
+          if(result.data){
+
+            result.data.map((category)=>{
+              options.push(category.name)
+            })
+          }
    
         }
     }
