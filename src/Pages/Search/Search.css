@@ -42,6 +42,39 @@
     height: 82%;
     width: 99%;
 }
+
+.search-not-found{
+    position:fixed;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:97%;
+    height:10cm;
+    font-size:0.55cm
+}
+
+.search-loading{
+    border: 2mm solid rgb(160, 160, 160);
+    border-radius: 1cm;
+    border-top: 2mm solid rgb(58, 58, 58);
+    animation-name: loading-animation;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+.search-loading-parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 0.2mm solid red; */
+    height: 9cm;
+    width: 100%;
+
+}
+
+@keyframes loading-animation {
+    from{transform: rotateZ(0deg);}
+    to{transform: rotateZ(360deg);}
+}
  
 @media only screen and (max-device-width:1100px){
     .card_main_div{
