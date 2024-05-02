@@ -8,9 +8,9 @@ export default function Footer() {
       <div className="footer-content">
         <div className="footer-section contact">
           <h2>Contact Us</h2>
-          <p>Email: info@example.com</p>
-          <p>Phone: +1 (123) 456-7890</p>
-          <p>123 Main Street, Cityville</p>
+          <p>Email: vedant.vartak500@gmail.com</p>
+          {/* <p>Phone: +1 (123) 456-7890</p> */}
+          {/* <p>123 Main Street, Cityville</p> */}
         </div>
 
         <div className="footer-section links">
